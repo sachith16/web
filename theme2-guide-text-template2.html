@@ -6,56 +6,15 @@
   body {
         font-family: sans-serif;
   }
-  ol {
-    counter-reset: my-awesome-counter;
-    list-style: none;
-    padding-left: 40px;
-  }
-  ol li {
-    margin: 0 0 1.5rem 0;
-    counter-increment: my-awesome-counter;
-    position: relative;
-
-  }
-  ol li::before {
-    content: counter(my-awesome-counter);
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    --size: 40px;
-    left: calc(-1 * var(--size) - 10px);
-    line-height: var(--size);
-    width: var(--size);
-    height: var(--size);
-    top: 0;
-    background: #C5161D;
-    border-radius: 50%;	
-    text-align: center;
-    box-shadow: 1px 1px 0 #999;
-  }
+  
   div {
     font-size: 2.5vw;
 
   }
   p {
-    font-size: 75%;
-  }
-
-
-  .label{
-    display: inline;
-    padding: .2em .6em .3em;
-    font-size: 65%;
-    font-weight: bold;
-    line-height: 1;
-    color: #fff;
-    background: #AEAEAE;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    margin: 0.5em 0.5em 0.5em 0;
-    border-radius: .25em;
-    margin-left: -10px;
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
   }
 
   .column {
@@ -78,30 +37,31 @@
   * {
     box-sizing: border-box;
   }
+
+  .title {
+    margin-top: 20px;
+  }
 </style>
 </head>
 <body>
       <div class="row">
          <div class="column" style="padding:20px;">
-
-                  <img src="https://applova-resources.s3.amazonaws.com/images/3pty/sestra/misc/clearme-website-qrcode.png" style="width: 100% !important; height: auto !important;"> 
-
+            <img src="https://applova-resources.s3.amazonaws.com/images/3pty/sestra/misc/clearme-website-qrcode.png" style="width: 100% !important; height: auto !important;"> 
          </div>
          <div class="column2">
+            <p class="title"><b>I’m New to CLEAR.</b></p>  
+            <p>To enroll, scan the QR code to the left.</p>
 
-                  <ol style="text-align: left">
-                     <li>If you are not a Clear member, you may scan the QR code to the left to begin the
-                        enrollment process.
-                     </li>
-                     <li>If you are a Clear member, open your Clear app to complete age verification and obtain a
-                        QR code for <b>“I Have a QR Code”</b> option.
-                     </li>
-                     <li>If you have a PIN, select <b>“I Have a PIN”</b> to enter your PIN and get started.</li>
-                     <li>If you do not have a PIN, see the front desk to obtain one.</li>
-                  </ol>
+            <p class="title"><b>I’m a CLEAR Member.</b></p>  
+            <p>Use the <b>“I Have a QR Code”</b> option to scan your CLEAR touchless ID.</p>
 
+            <p class="title"><b>I Have a PIN.</b></p>  
+            <p>Use the <b>“I Have a PIN”</b> option to enter and get started.</p>
+
+            <p class="title"><b>I Need a PIN.</b></p>  
+            <p>Please see the front desk.</p>
+            
          </div>
       </div>
    </body>
-
 </html>
